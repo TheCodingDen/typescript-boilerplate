@@ -1,0 +1,28 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "es2021": true,
+    "node": true,
+    "jest": true
+    // "browser": true
+  },
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaFeatures": {
+      "globalReturn": true
+    },
+    "sourceType": "module",
+    "createDefaultProgram": true
+  },
+  "extends": "standard-with-typescript",
+  "plugins": [
+    "@typescript-eslint",
+    "eslint-plugin-tsdoc"
+  ],
+  "rules": {
+    "tsdoc/syntax": "error",
+    "no-void": "off",
+    "@typescript-eslint/restrict-template-expressions": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off"
+  }
+}

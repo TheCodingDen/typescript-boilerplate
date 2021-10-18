@@ -1,0 +1,43 @@
+{
+  "name": "typescript-boilerplate",
+  "version": "1.0.0",
+  "description": "Organisation-level boilerplate for TypeScript projects",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --config jest.coverage.js",
+    "test:coverage:watch": "jest --watchAll --config jest.coverage.js",
+    "lint": "eslint . --ext .ts",
+    "doc": "typedoc --out docs src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheCodingDen/typescript-boilerplate.git"
+  },
+  "author": "The Coding Den",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheCodingDen/typescript-boilerplate/issues"
+  },
+  "homepage": "https://github.com/TheCodingDen/typescript-boilerplate#readme",
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.11.1",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^21.0.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "eslint-plugin-tsdoc": "^0.2.14",
+    "jest": "^27.3.0",
+    "ts-jest": "^27.0.7",
+    "typedoc": "^0.22.6",
+    "typescript": "^4.4.4"
+  }
+}
