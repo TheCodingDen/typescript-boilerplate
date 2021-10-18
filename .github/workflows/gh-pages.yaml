@@ -1,4 +1,4 @@
-name: GitHub Pages deployment
+name: GitHub Pages
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  test:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
