@@ -14,8 +14,10 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - name: Install npm@latest
-        run: sudo npm i -g npm
+      - name: Install nvm
+        run: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+      - name: Install Node
+        run: nvm use
       - name: Install dependencies
         run: npm i
       - name: Lint
