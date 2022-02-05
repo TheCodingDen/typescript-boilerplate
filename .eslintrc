@@ -8,6 +8,7 @@
   "parserOptions": {
     "ecmaVersion": "latest",
     "project": "./tsconfig.json",
+    "createDefaultProgram": true, // Required for linting to work even on the test folder
     "ecmaFeatures": {
       "globalReturn": true
       // jsx: true
