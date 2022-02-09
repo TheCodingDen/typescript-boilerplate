@@ -11,7 +11,8 @@
     "test:coverage": "jest --config jest.coverage.js",
     "test:coverage:watch": "jest --watchAll --config jest.coverage.js",
     "lint": "eslint . --ext .ts",
-    "doc": "typedoc --out docs src"
+    "doc": "typedoc --out docs src",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -35,9 +36,14 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-standard": "^5.0.0",
     "eslint-plugin-tsdoc": "^0.2.14",
+    "husky": "^7.0.0",
     "jest": "^27.5.0",
+    "lint-staged": "^12.3.3",
     "ts-jest": "^27.1.3",
     "typedoc": "^0.22.11",
     "typescript": "^4.5.5"
+  },
+  "lint-staged": {
+    "*.ts": "eslint --cache --fix"
   }
 }
