@@ -40,7 +40,7 @@
     "lint-staged": "^13.0.3",
     "ts-jest": "^28.0.5",
     "typedoc": "^0.23.6",
-    "typescript": "^4.7.4"
+    "typescript": "^4.8.2"
   },
   "lint-staged": {
     "*.(ts|js)": "eslint --cache --fix"
