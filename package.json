@@ -44,7 +44,7 @@
     "nodemon": "^2.0.19",
     "ts-jest": "^28.0.8",
     "typedoc": "^0.23.14",
-    "typescript": "^4.8.2"
+    "typescript": "^4.8.3"
   },
   "lint-staged": {
     "*.(ts|js)": "eslint --cache --fix"
