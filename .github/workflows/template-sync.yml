@@ -17,5 +17,5 @@ jobs:
       - uses: ahmadnassri/action-workflow-queue@v1 # avoid conflicts, by running this template one at a time
       - uses: ahmadnassri/action-template-repository-sync@v1
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GH_TOKEN }}
           dry-run: true # Dry run for now
