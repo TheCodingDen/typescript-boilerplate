@@ -1,6 +1,7 @@
 name: Template sync
 
 on:
+  workflow_dispatch:
   workflow_run: # setup this workflow as a dependency of others
     workflows: [ test ] # don't sync template unless tests and other important workflows have passed
 
