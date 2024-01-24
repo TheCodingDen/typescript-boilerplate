@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "extends": "./tsconfig.json",
+  "include": [
+    "test",
+    "jest.*.js"
+  ]
+}

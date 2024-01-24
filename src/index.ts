@@ -7,4 +7,4 @@
  * @param param1 - Test parameter 1
  * @param param2 - Test parameter 2
  */
-export function main (param1: string, param2: number): void {}
+export function main (param1: string, param2: number): undefined {}
