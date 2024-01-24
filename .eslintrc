@@ -7,7 +7,7 @@
   },
   "parserOptions": {
     "ecmaVersion": "latest",
-    "project": "./tsconfig.json",
+    "project": "./tsconfig.eslint.json",
     "createDefaultProgram": true, // Required for linting to work even on the test folder
     "ecmaFeatures": {
       "globalReturn": true
@@ -24,6 +24,10 @@
     "tsdoc/syntax": "error",
     "no-void": "off",
     "@typescript-eslint/restrict-template-expressions": "off",
-    "@typescript-eslint/strict-boolean-expressions": "off"
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/no-confusing-void-expression": ["error", {
+      "ignoreArrowShorthand": true,
+      "ignoreVoidOperator": true
+    }]
   }
 }
